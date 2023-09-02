@@ -20,6 +20,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "commitizen": "^4.3.0"
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
   }
 }
