@@ -42,25 +42,22 @@ const cards = [
 
 export default function FourCardFeature() {
   return (
-    <main className={`container ${poppins.className}`}>
-      <h2 className='title'>
+    <main className={`four-card ${poppins.className}`}>
+      <h2 className='four-card__title'>
         Reliable, efficient delivery
       </h2>
-      <h1 className='title weight600'>
+      <h1 className='four-card__title font-weight-600'>
         Powered by Technology
       </h1>
-      <p className='content'>
+      <p className='four-card__content'>
         Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
       </p>
-      <div className='cardContainer'>
+      <div className='four-card__card'>
         {
           cards.map((card, i) => (
               <Card
                 key={i}
-                title={card.title}
-                content={card.content}
-                color={card.color}
-                imageName={card.imageName}
+                {...card}
               />
             )
           )

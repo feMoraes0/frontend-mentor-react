@@ -1,23 +1,18 @@
-main.container {
+.four-card {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: hsl(0, 0%, 98%);
-  margin-top: 85px;
-  padding: 0 35px;
+  padding: 85px 35px 0;
 }
 
-.title {
+.four-card__title {
   font-size: 18pt;
   font-weight: 200;
   letter-spacing: 0.1px;
   padding: 0 5px;
 }
 
-.weight600 {
-  font-weight: 600;
-}
-
-.content {
+.four-card__content {
   margin-top: 18px;
   letter-spacing: -0.41px;
   font-family: 15px;
@@ -25,6 +20,11 @@ main.container {
   padding: 0 5px;
 }
 
-.cardContainer {
+.four-card__card {
   margin-top: 75px;
+}
+
+/* Modifiers */
+.font-weight-600 {
+  font-weight: 600;
 }
