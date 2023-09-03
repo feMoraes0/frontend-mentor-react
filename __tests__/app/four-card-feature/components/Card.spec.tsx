@@ -25,5 +25,9 @@ describe("Given Card component rendered", () => {
   it("Then should render an image with source defined", () => {
     expect(screen.getByRole("img")).toHaveAttribute("src", `/four-card-feature/${props.imageName}.svg`);
   });
+
+  it("Then should define image name props as image alt text", () => {
+    expect(screen.getByAltText(props.imageName)).toBeInTheDocument();
+  });
 });
 
