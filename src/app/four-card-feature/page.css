@@ -28,3 +28,60 @@
 .font-weight-600 {
   font-weight: 600;
 }
+
+@media (min-width: 1440px) {
+  .four-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: flex-start;
+    padding-top: 81px;
+  }
+
+  .four-card__title {
+    font-size: 27pt;
+    padding: 0;
+  }
+
+  .four-card__title:nth-child(1) {
+    margin-bottom: -5px;
+  }
+
+  .four-card__content {
+    width: 40%;
+    text-align: center;
+  }
+
+  .four-card__card {
+    margin-top: 65px;
+    width: 81%;
+    display: grid;
+    gap: 5px 25px;
+    grid-template:
+      "card-1 card-2 card-4"
+      "card-1 card-3 card-4"
+  }
+
+  /* .four-card__card article {
+    border: 2px solid red;
+  } */
+
+  .four-card__card article:nth-child(1) {
+    grid-area: card-1;
+    align-self: center;
+  }
+
+  .four-card__card article:nth-child(2) {
+    grid-area: card-2;
+  }
+
+  .four-card__card article:nth-child(3) {
+    grid-area: card-3;
+  }
+
+  .four-card__card article:nth-child(4) {
+    grid-area: card-4;
+    align-self: center;
+  }
+
+}
