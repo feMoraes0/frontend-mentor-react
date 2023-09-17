@@ -1,12 +1,12 @@
 import "./page.css";
 import { Poppins } from "next/font/google";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import Card from "./components/card";
 
-export const metadata: Metadata = {
-  title: "Frontend Mentor | Four card feature section",
-  description: "Four card feature section",
-}
+// export const metadata: Metadata = {
+//   title: "Frontend Mentor | Four card feature section",
+//   description: "Four card feature section",
+// }
 
 const poppins = Poppins({
   weight: ["200", "400", "600"],
@@ -43,12 +43,12 @@ const cards = [
 export default function FourCardFeature() {
   return (
     <main className={`four-card ${poppins.className}`}>
-      <h2 className="four-card__title">
+      <h1 className="four-card__title">
         Reliable, efficient delivery
-      </h2>
-      <h1 className="four-card__title font-weight-600">
-        Powered by Technology
       </h1>
+      <h2 className="four-card__title font-weight-600">
+        Powered by Technology
+      </h2>
       <p className="four-card__content">
         Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
       </p>
