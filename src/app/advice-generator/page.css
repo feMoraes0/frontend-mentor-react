@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  background-color: hsl(217, 19%, 24%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section article {
+  background-color: hsl(217, 19%, 38%);
+  border-radius: 10px;
+  width: 38%;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+section article h1 {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 35px;
+}
+
+section article p {
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 2px;
+}
+
+section article .image-box {
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+section article .image-box::after,
+section article .image-box::before {
+  content: '';
+  width: 43%;
+  height: 1px;
+  background-color: hsl(193, 38%, 86%);
+  position: absolute;
+  top: 50%;
+}
+
+section article .image-box::after {
+  right: 0;
+}
+
+section article .image-box::before {
+  left: 0;
+}
+
+section article .image-dice-box {
+  border-radius: 100%;
+  padding: 20px;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -35px;
+}
