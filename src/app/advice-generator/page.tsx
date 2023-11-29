@@ -16,8 +16,8 @@ const AdviceGenerator = () => {
 
   useEffect(() => {
     const fetchAdapter = new FetchAdapter();
-    fetchAdapter.get("https://api.adviceslip.com/advice").then((advice) => {
-      setAdvice(advice);
+    fetchAdapter.get("https://api.adviceslip.com/advice").then((newAdvice: Advice) => {
+      setAdvice(newAdvice);
     })
   }, []);
 
